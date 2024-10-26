@@ -8,7 +8,7 @@ import json
 app = Flask(__name__)
 
 # Charger les fichiers JSON
-dossier = 'data/'
+dossier = 'C:/Users/fanti/Music/universite paris-sorbonne/python/rameur/'
 dataraw = {}
 noms_json = [fichier[:-5] for fichier in os.listdir(dossier) if fichier.endswith('.json')]
 
