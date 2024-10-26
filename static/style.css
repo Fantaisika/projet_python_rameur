@@ -60,6 +60,22 @@ body {
     box-shadow: 0 4px 10px var(--shadow-color);
 }
 
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .graph-container {
+        flex-direction: column; /* Empile les graphiques */
+        align-items: center; /* Centre les graphiques */
+    }
+    
+    .graph-container img {
+        max-width: 90%; /* Ajuste la largeur sur petits écrans */
+    }
+}
+
 /* Style du tableau */
 table {
     width: 100%;
