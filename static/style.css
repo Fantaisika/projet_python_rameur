@@ -1,0 +1,107 @@
+:root {
+    --background-color:rgba(34, 139, 34, 0.1);
+   
+    --primary-color: #4a90e2;
+    --secondary-color: #50e3c2;
+    --text-color: #333333;
+    --table-header-color: #4a90e2;
+    --table-row-bg-color: #ffffff;
+    --table-row-alt-bg-color: #f9f9f9;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    
+}
+
+.container {
+    background-color: var(--container-bg-color);
+    border-radius: 12px;
+    text-align: center;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Titre principal */
+.container h1 {
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 12px;
+}
+
+/* Conteneur flexible pour les graphiques et la table */
+.graph-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+}
+
+/* Style des images (graphiques) */
+.graph-container img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+/* Style du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    font-size: 1.1rem;
+    table-layout: fixed;
+}
+
+table th,
+table td {
+    padding: 1rem;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+table th {
+    background-color: var(--table-header-color);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--table-row-alt-bg-color);
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--table-row-bg-color);
+}
+
+table tr:hover {
+    background-color: rgba(34, 139, 34, 0.15); /* Surbrillance verte légère */
+}
+
+footer {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-top: 2rem;
+    text-align: center;
+}
